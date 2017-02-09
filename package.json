@@ -1,0 +1,30 @@
+{
+  "name": "matchvid",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Chris Allen Lane",
+    "email": "chris@chris-allen-lane.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "jshint app"
+  },
+  "jshintConfig": {
+    "esnext": true,
+    "expr": true,
+    "laxbreak": true
+  },
+  "dependencies": {
+    "docopt": "0.6.2",
+    "runtime-to-seconds": "^2.1.0",
+    "yamljs": "^0.2.8"
+  },
+  "devDependencies": {
+    "jshint": "2.9.4"
+  },
+  "bin": {
+    "matchvid": "app/index.js"
+  },
+  "main": "app/index.js"
+}

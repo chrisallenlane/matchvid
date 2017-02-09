@@ -1,0 +1,21 @@
+matchvid
+
+Usage:
+  matchvid config [<number-of-stages>]
+  matchvid render [options]
+
+Options:
+  -h --help                  Show this screen.
+  --version                  Show version.
+  -v --video-dir=<directory> Path to videos.
+  -o --outfile=<file>        Outfile name.
+  -c --config=<file>         Path to config file.
+  -a --audio=<file>          Audio file to mix in.
+
+Examples:
+
+  To seed a sample config file:
+    matchvid config > config.yml
+
+  To render a video:
+    matchvid -c match.yml -v /path/to/videos -a /path/to/soundtrack.mp3 -o outfile.mp4 | sh
