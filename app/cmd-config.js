@@ -9,7 +9,7 @@ module.exports = function(options) {
   for (var i = 1; i <= count ; i++) {
     yaml += "  - file : stage-" + i + ".mp4\n";
     yaml += "    start: '00:00:00'\n";
-    yaml += "    file : '00:00:00'\n";
+    yaml += "    end  : '00:00:00'\n";
     yaml += "\n";
   }
 
