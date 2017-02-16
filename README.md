@@ -4,12 +4,12 @@ mvid
 
 ## Usage ##
 ```sh
-# generate a config
-mvid config > stages.yml
+#To seed a sample config file:
+  mvid config > config.yml
 
-# preview output
-mvid -c stages.yml -v ~/videos -a ~/music/soundtrack.mp3 | sh
+#To preview a video:
+  mvid stages.yml /path/to/videos | sh
 
-# save file
-mvid -c stages.yml -v ~/videos -a ~/music/soundtrack.mp3 -o ~/outfile.mp4 | sh
+#To render a video:
+  mvid stages.yml /path/to/videos match.mp4 | sh
 ```
