@@ -5,11 +5,10 @@ mvid
 ## Usage ##
 ```sh
 #To seed a sample config file:
-  mvid config > config.yml
+mvid config > config.yml
 
 #To preview a video:
-  mvid stages.yml /path/to/videos | sh
+mvid stages.yml /path/to/videos | sh
 
 #To render a video:
-  mvid stages.yml /path/to/videos match.mp4 | sh
-```
+mvid stages.yml /path/to/videos match.mp4 | sh
