@@ -1,5 +1,5 @@
 {
-  "name": "matchvid",
+  "name": "mvid",
   "version": "0.0.1",
   "private": true,
   "author": {
@@ -24,7 +24,7 @@
     "jshint": "2.9.4"
   },
   "bin": {
-    "matchvid": "app/index.js"
+    "mvid": "app/index.js"
   },
   "main": "app/index.js"
 }
