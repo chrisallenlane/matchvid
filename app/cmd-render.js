@@ -12,7 +12,7 @@ module.exports = function(options) {
   // read and parse the config file
   var config = {};
   try {
-    config = yaml.load(options['--config']);
+    config = yaml.load(options['<config>']);
   } catch (e) {
     console.warn(e.message);
     process.exit(1);
@@ -21,7 +21,7 @@ module.exports = function(options) {
   // transform the stage data
   config.stages = config.stages.map(function(stage) {
     return {
-      file  : path.join(options['--video-dir'], stage.file),
+      file  : path.join(options['<video-dir>'], stage.file),
       start : seconds(stage.start) * framerate,
       end   : seconds(stage.end)   * framerate,
     };
@@ -58,9 +58,9 @@ module.exports = function(options) {
     ].join(' ');
   }
 
-  // optionally save to --outfile
-  if (options['--outfile']) {
-    cmd += ` -consumer avformat:${ options['--outfile']}`;
+  // optionally save to <outfile>
+  if (options['<outfile>']) {
+    cmd += ` -consumer avformat:${ options['<outfile>']}`;
   }
 
   // echo to shell

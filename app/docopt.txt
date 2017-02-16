@@ -2,14 +2,11 @@ mvid
 
 Usage:
   mvid config [<number-of-stages>]
-  mvid render [options]
+  mvid render [options] <config> <video-dir> [<outfile>]
 
 Options:
   -h --help                  Show this screen.
   --version                  Show version.
-  -v --video-dir=<directory> Path to videos.
-  -o --outfile=<file>        Outfile name.
-  -c --config=<file>         Path to config file.
   -a --audio=<file>          Audio file to mix in.
 
 Examples:
@@ -17,5 +14,8 @@ Examples:
   To seed a sample config file:
     mvid config > config.yml
 
+  To preview a video:
+    mvid stages.yml /path/to/videos | sh
+
   To render a video:
-    mvid -c match.yml -v /path/to/videos -a /path/to/soundtrack.mp3 -o outfile.mp4 | sh
+    mvid stages.yml /path/to/videos match.mp4 | sh
