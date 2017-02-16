@@ -1,8 +1,8 @@
-matchvid
+mvid
 
 Usage:
-  matchvid config [<number-of-stages>]
-  matchvid render [options]
+  mvid config [<number-of-stages>]
+  mvid render [options]
 
 Options:
   -h --help                  Show this screen.
@@ -15,7 +15,7 @@ Options:
 Examples:
 
   To seed a sample config file:
-    matchvid config > config.yml
+    mvid config > config.yml
 
   To render a video:
-    matchvid -c match.yml -v /path/to/videos -a /path/to/soundtrack.mp3 -o outfile.mp4 | sh
+    mvid -c match.yml -v /path/to/videos -a /path/to/soundtrack.mp3 -o outfile.mp4 | sh
